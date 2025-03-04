@@ -1,0 +1,110 @@
+.container-lg {
+    max-width: 1340px;
+    margin: 0 auto;
+
+    @include breakpoint("sm-max") {
+        padding: 0 30px;
+    }
+}
+.container-lg3 {
+    max-width: 1360px;
+    margin: 0 auto;
+    @include breakpoint("sm-max") {
+        padding: 0 30px;
+    }
+}
+
+.container-md {
+    max-width: 1104px;
+    margin: 0 auto;
+    @include breakpoint("sm-max") {
+        padding: 0 30px;
+    }
+}
+
+.container-md2 {
+    max-width: 1203px;
+    margin: 0 auto;
+    @include breakpoint("sm-max") {
+        padding: 0 30px;
+    }
+}
+
+.container-md3 {
+    max-width: 1338px;
+    margin: 0 auto;
+    @include breakpoint("sm-max") {
+        padding: 0 30px;
+    }
+}
+
+.container-md4 {
+    max-width: 1154px;
+    margin: 0 auto;
+    @include breakpoint("sm-max") {
+        padding: 0 30px;
+    }
+}
+.container-md5 {
+    max-width: 1226px;
+    margin: 0 auto;
+    @include breakpoint("sm-max") {
+        padding: 0 30px;
+    }
+}
+
+.container-md6 {
+    max-width: 1145px;
+    margin: 0 auto;
+    @include breakpoint("sm-max") {
+        padding: 0 30px;
+    }
+}
+
+.container-md7 {
+    max-width: 1221px;
+    margin: 0 auto;
+    @include breakpoint("sm-max") {
+        padding: 0 30px;
+    }
+}
+
+.container-md8 {
+    max-width: 1109px;
+    margin: 0 auto;
+    @include breakpoint("sm-max") {
+        padding: 0 30px;
+    }
+}
+
+.container-md9 {
+    max-width: 1219px;
+    margin: 0 auto;
+    @include breakpoint("sm-max") {
+        padding: 0 30px;
+    }
+}
+
+.container-md10 {
+    max-width: 1177px;
+    margin: 0 auto;
+    @include breakpoint("sm-max") {
+        padding: 0 30px;
+    }
+}
+
+.container-md11 {
+    max-width: 934px;
+    margin: 0 auto;
+    @include breakpoint("sm-max") {
+        padding: 0 30px;
+    }
+}
+
+.container-md12 {
+    max-width: 1175px;
+    margin: 0 auto;
+    @include breakpoint("sm-max") {
+        padding: 0 30px;
+    }
+}

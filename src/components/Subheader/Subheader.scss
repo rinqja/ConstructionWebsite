@@ -1,0 +1,66 @@
+@import '../../../styles/mixins/index.scss';
+
+.sub-header-alignment {
+    background: rgba(12, 57, 133, 0.7);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+
+    @include breakpoint("sm-max") {
+      padding: 12px 0;
+    }
+
+   
+
+    .text-style {
+      padding-left: 9%;
+      padding-right: 9%;
+        display: flex;
+        align-items: center;
+        justify-content: stretch;
+        
+        .active-link {
+          font-weight: bold;
+        }
+
+        @include breakpoint("sm-max") {
+        }
+
+
+        a:last-child {
+            border: none;
+            padding-right: 0;
+        }
+        a:first-child {
+            padding-left: 0px;
+        }
+      a {
+        display: block;
+        border-right: 1px solid #fff;
+        padding: 5px 5%;
+        cursor: pointer;
+        font-weight: 300; 
+        font-size: 24px;
+        line-height: 133.4%;
+        color: #ffffff;
+        &:not(:last-child) {
+          border-right: 1px solid #fff; // Apply border to all except last link
+      }
+
+
+     
+
+        @include breakpoint("sm-max") {
+          font-weight: 300;
+font-size: 10px;
+line-height: 133.4%;
+padding: 0 10px;
+        }
+      }
+    }
+    .angebotediv{
+      padding: 1px 7%;
+      border-right: 1px solid #fff;
+    }
+}

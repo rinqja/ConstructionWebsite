@@ -1,0 +1,34 @@
+@import "../../../styles/mixins/index.scss";
+
+.genetator-content {
+  padding: 45px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  cursor: pointer;
+
+  @include breakpoint("sm-max") {
+    padding: 45px 0 60px 0;
+  }
+
+  img {
+    @include breakpoint("sm-max") {
+      max-width: 15px;
+    }
+  }
+
+  span {
+    display: block;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 108.9%;
+    color: #323232;
+
+    @include breakpoint("sm-max") {
+      font-weight: 700;
+font-size: 16px;
+line-height: 108.9%;
+    }
+  }
+}

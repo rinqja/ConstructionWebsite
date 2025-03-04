@@ -1,0 +1,218 @@
+@import "../../../../styles/mixins/index.scss";
+
+.job-ads-banner-all-contnet-alignment {
+  padding: 82px 0 143px 0;
+
+  @include breakpoint("sm-max") {
+    padding: 60px 0 0 0;
+  }
+
+  .mobile-view-show-div {
+    display: none;
+    
+    @include breakpoint("sm-max") {
+      display: block;
+    }
+
+    .mobile-grid {
+      display: grid;
+      grid-template-columns: 1fr 124px;
+      gap: 10px;
+    
+      .mobile-grid-items {
+        .image{
+          img {
+            width: 100%;
+            height: 124px;
+            object-fit: cover;
+          }
+        }
+        .main-mobile-image {
+          img {
+            width: 100%;
+            height: 256px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+
+  .all-grid {
+    .grid:nth-child(2n + 2) {
+      grid-template-columns: 1fr 407px;
+
+      @include breakpoint("sm-max") {
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 10px;
+      }
+      .two-col-grid {
+        .two-col-grid-items:nth-child(1) {
+          @include breakpoint("sm-max") {
+            display: none;
+          }
+        }
+      }
+      .grid-items {
+        .sec-image {
+          @include breakpoint("sm-max") {
+            display: none;
+          }
+        }
+        .image-style {
+          @include breakpoint("sm-max") {
+            display: none;
+          }
+        }
+      }
+      .grid-items:nth-child(1) {
+        order: 2;
+
+        @include breakpoint("sm-max") {
+          grid-template-columns: repeat(1 , 1fr);
+          gap: 10px;
+        }
+      }
+    }
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 407px 1fr;
+    gap: 60px;
+    padding: 0 0 120px 0;
+
+    @include breakpoint("sm-max") {
+      padding: 0 0 60px 0;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
+    .grid-items:nth-child(1) {
+      @include breakpoint("sm-max") {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+    }
+    .grid-items {
+      padding: 0 0 26px 0;
+
+      @include breakpoint("sm-max") {
+        padding: 0;
+      }
+      .text-icon {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        gap: 12px;
+
+        span {
+          display: block;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 93.9%;
+          color: #323232;
+
+          @include breakpoint("sm-max") {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 93.9%;
+          }
+        }
+      }
+      .text {
+        padding: 0 0 26px 0;
+        h4 {
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 166.4%;
+          margin: 0 0 10px 0;
+          color: #323232;
+
+          @include breakpoint("sm-max") {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 166.4%;
+          }
+        }
+        p {
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 166.4%;
+          color: #323232;
+          margin: 0 0 0 0;
+          max-width: 737px;
+
+          @include breakpoint("sm-max") {
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 166.4%;
+            max-width: 313px;
+          }
+        }
+      }
+      .two-col-grid {
+        display: grid;
+        padding: 0 0 60px 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+
+        @include breakpoint("sm-max") {
+          grid-template-columns: repeat(1, 1fr);
+          padding: 0 0 20px 0;
+        }
+        .two-col-grid-items:last-child {
+          @include breakpoint("sm-max") {
+            display: none;
+          }
+        }
+        .two-col-grid-items {
+          &.bg-blue {
+            background: rgba(12, 57, 133, 0.7);
+            height: 100%;
+          }
+          img {
+            width: 100%;
+            height: 362px;
+            object-fit: cover;
+
+            @include breakpoint("sm-max") {
+              height: 153px;
+            }
+          }
+        }
+      }
+      .box {
+        width: 100%;
+        height: 227px;
+        background: rgba(255, 126, 0, 0.7);
+
+        @include breakpoint("sm-max") {
+          height: 224px;
+        }
+      }
+      .sec-image {
+        img {
+          width: 95%;
+          height: 362px;
+          object-fit: cover;
+        }
+      }
+      .image-style {
+        padding: 0 0 60px 0;
+
+        @include breakpoint("sm-max") {
+          padding: 0;
+        }
+        img {
+          width: 100%;
+          height: 596px;
+          object-fit: cover;
+
+          @include breakpoint("sm-max") {
+            height: 224px;
+          }
+        }
+      }
+    }
+  }
+}

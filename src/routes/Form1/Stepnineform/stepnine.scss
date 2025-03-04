@@ -1,0 +1,268 @@
+@import "../../../../styles/index.scss";
+
+// .bigpicture{
+//   background-image: url("/src/assets/imges/testio.png");
+// }
+
+p {
+  font-weight: bold;
+}
+.logo-layout {
+  padding: 70px 50px;
+}
+.finish-layout {
+  display: grid;
+  padding: 80px 100px;
+  grid-template-rows: auto 1fr auto; /* This will create three rows: header, form and checkboxes, and footer */
+  grid-template-columns: 1fr; /* This will create one column */
+  gap: 20px;
+  height: 100%;
+}
+.header {
+  display: flex;
+  justify-content: space-evenly; /* This will push the children to the ends */
+  flex-direction: row; /* Elements are laid out in a row */
+  align-items: center; /* Vertically center the items */
+}
+
+.header-info {
+  display: flex; /* This will make header-info a flex container */
+  justify-content: center; /* This will center the items horizontally */
+  align-items: center; /* This will center the items vertically */
+  flex-grow: 1;
+  justify-content: space-evenly; /* This will allow header-info to take up available space */
+}
+
+.date-input {
+  width: 200px;
+  font-family: "Poppins", sans-serif;
+  background: rgba(62, 62, 62, 0.04);
+  height: 50px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 193.4%;
+  color: #323232;
+  border: none;
+  border-bottom: 1px solid #323232;
+  padding: 0 25px;
+
+  @include breakpoint("sm-max") {
+    font-weight: 300;
+    height: 52px;
+    font-size: 12px;
+    line-height: 193.4%;
+  } /* This will add space between the date and aufstellung */
+}
+.aufstellung {
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+}
+#aufstellungCheckbox {
+  width: 20px;
+  height: 20px;
+}
+.form-and-checkboxes {
+  display: grid;
+  grid-template-rows: 1fr; /* This will create one row */
+  grid-template-columns: 1fr 1fr; /* This will create two columns: form and checkboxes */
+  gap: 20px; /* This will create a gap between the grid items */
+}
+
+.billing-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+  .phone-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    .half-width {
+      width: 48%; /* Adjust width to fit your design, ensure total width including margins/padding does not exceed 100% */
+    }
+  }
+}
+
+.styled-input {
+  width: 100%;
+  height: 60px;
+  font-family: "Poppins", sans-serif;
+  background: rgba(62, 62, 62, 0.04);
+  height: 50px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 193.4%;
+  color: #323232;
+  border: none;
+  border-bottom: 1px solid #323232;
+  padding: 0 25px;
+}
+
+.styled-input2 {
+  width: 70%;
+
+  font-family: "Poppins", sans-serif;
+  background: rgba(62, 62, 62, 0.04);
+  height: 50px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 193.4%;
+  color: #323232;
+  border: none;
+  border-bottom: 1px solid #323232;
+  padding: 0 25px;
+}
+.styled-input::placeholder {
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  line-height: 193.4%;
+  color: #323232;
+}
+.checkboxGroups {
+  display: flex;
+  /* Aligns the two groups on opposite ends */
+}
+
+.checkboxContainer {
+  display: grid;
+  grid-template-columns: 10px 40px auto; /* Adjusts the width for each column */
+  align-items: center; /* Centers items vertically in each row */
+  gap: 10px; /* Space between each column */
+  margin-top: 15px;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.myCheckbox {
+  width: 20px;
+  height: 20px;
+  box-sizing: content-box; /* Keeps the checkbox size regardless of padding/border */
+}
+
+.checkboxContainer input[type="text"] {
+  border: none; /* Removes all borders */
+  border-bottom: 1px solid black; /* Adds only bottom border */
+  background-color: transparent; /* Keeps background transparent */
+  color: inherit; /* Inherits text color from parent */
+  font-size: 16px; /* Matches font size of surrounding text */
+  padding: 0; /* Removes padding */
+  /* Changes cursor to indicate text can be entered */
+  width: 50%; /* Auto width based on content size */
+}
+
+.footer {
+  width: 100%; /* Ensures the footer takes full width */
+  display: grid; /* Makes the footer a grid container */
+  grid-template-rows: 1fr 1fr; /* Creates two rows in the footer */
+}
+
+.topFooter {
+  display: flex;
+  justify-content: space-between; /* Distributes space between the two date/checkbox containers */
+  display: grid; /* Adds padding inside the top section */
+  grid-template-columns: 1fr 1fr;
+}
+
+.dateCheckboxContainer {
+  display: flex;
+  align-items: center; /* Aligns the contents of each container vertically */
+  gap: 10px; /* Adds space between label and input */
+}
+
+.datum-input {
+  width: 80%;
+  height: 60px;
+  font-family: "Poppins", sans-serif;
+  background: rgba(62, 62, 62, 0.04);
+  height: 50px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 193.4%;
+  color: #323232;
+  border: none;
+  border-bottom: 1px solid #323232;
+  padding: 0 25px;
+}
+.datumlast-input {
+  width: 90%;
+  height: 120px;
+  font-family: "Poppins", sans-serif;
+  background: rgba(62, 62, 62, 0.04);
+  margin-right: 30px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 193.4%;
+  color: #323232;
+  border: none;
+  border-bottom: 1px solid #323232;
+  padding: 0 25px;
+}
+.datumlast-input::placeholder {
+  position: absolute;
+  top: 1%;
+  left: 10;
+}
+.icon-text {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-right: 10%;
+  font-weight: bold;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.new-icon-text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 0 20px 50px 0;
+  gap: 80px;
+  cursor: pointer;
+  span,
+  img {
+    margin-top: 20px;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .selected-option span {
+    color: #ff7e00;
+  }
+}
+
+.bottomFooter {
+  margin-top: 20px;
+  margin-right: 10%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.styled-picture {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background: rgba(62, 62, 62, 0.04);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 193.4%;
+  color: #323232;
+  border: none;
+
+  padding: 0 25px;
+}
+
+.two-button-alignment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0 0 0;
+}

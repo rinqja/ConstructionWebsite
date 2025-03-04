@@ -1,0 +1,240 @@
+@import "../../../../styles/mixins/index.scss";
+
+
+
+
+
+.about-us-content-all-page-alignment {
+  padding: 100px 0 200px 0;
+
+  @include breakpoint("sm-max") {
+    padding: 60px 0;
+  }
+
+  .iframe {
+    .container-lg {
+      @include breakpoint("sm-max") {
+        padding: 0;
+      }
+    }
+    iframe {
+      width: 100%;
+      height: 471px;
+      border: none;
+
+      @include breakpoint("sm-max") {
+        height: 258px;
+      }
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 440px;
+    gap: 20px;
+    padding: 0 0 213px 0;
+
+    @include breakpoint("sm-max") {
+      grid-template-columns: repeat(1 , 1fr);
+      gap: 20px;
+      padding: 0 0 60px 0;
+    }
+
+    .grid-items {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      .none-section {
+        display: none;
+      }
+      .new-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 126, 0, 0.9);
+        height: 100%;
+
+        @include breakpoint("sm-max") {
+          height: 236px;
+        }
+      }
+
+      .hide {
+        transform: translateY(-100%);
+        transition: 0.3s ease-in-out;
+      }
+
+      .show {
+        transform: translateY(0%);
+        transition: 0.3s ease-in-out;
+      }
+
+      .card-details {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        height: 100%;
+        background: rgba(124, 124, 124, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease-in-out; /* Adjust this to match the timeout in handleImageClick */
+
+
+        @include breakpoint("sm-max") {
+          height: 236px;
+        }
+
+        .width-box {
+          max-width: 323px;
+        .department{
+          font-weight: 400;
+          font-size: 30px;
+          margin: 0 0 20px 0;
+          line-height: 123.4%;
+          text-transform: uppercase;
+          color: #ffffff;
+
+          @include breakpoint("sm-max") {
+            font-weight: 500;
+            font-size: 14px;
+            margin: 0 0 10px 0;
+          }
+        }
+          p {
+            font-style: normal;
+            margin: 0 0 20px 0;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 123.4%;
+            text-transform: uppercase;
+            color: #323232;
+
+            @include breakpoint("sm-max") {
+              font-weight: 500;
+              font-size: 20px;
+              margin: 0 0 10px 0;
+            }
+          }
+
+          span {
+            display: block;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 162.9%;
+            color: #323232;
+            max-width: 323px;
+
+            @include breakpoint("sm-max") {
+              font-weight: 300;
+              font-size: 10px;
+              line-height: 162.9%;
+            }
+          }
+        }
+      }
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        @include breakpoint("sm-max") {
+          grid-template-columns: repeat(2 , 1fr);
+          gap: 20px;
+        }
+
+        .image-grid-items {
+           .active {
+            filter: none;
+          }
+          img {
+            width: 100%;
+            height: 225px;
+            object-fit: cover;
+            filter: grayscale(100%);
+            &:hover {
+              filter: none;// Change this to the height you want on hover
+            }
+            
+           
+            
+
+            @include breakpoint("sm-max") {
+              height: 148px;
+            }
+           
+            
+          }
+        }
+      }
+    }
+
+    .grid-items:last-child {
+      height: 100%;
+
+      @include breakpoint("sm-max") {
+        height: 236px;
+      }
+    }
+  }
+
+  .text-grid {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 40px;
+    padding: 0 0 163px 0;
+
+    @include breakpoint("sm-max") {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 0 0 60px 0;
+    }
+
+    .text-grid-items {
+      .empty {
+        width: 100px;
+        background: rgba(12, 57, 133, 0.7);
+        height: 100px;
+
+        @include breakpoint("sm-max") {
+          width: 74px;
+          height: 74px;
+        }
+      }
+
+      h6 {
+        font-weight: 400;
+        font-size: 64px;
+        margin: 0 0 20px 0;
+        line-height: 123.4%;
+        text-transform: uppercase;
+        color: #323232;
+
+        @include breakpoint("sm-max") {
+          font-weight: 400;
+          font-size: 36px;
+          line-height: 123.4%;
+          color: #323232;
+        }
+      }
+      p:last-child {
+        margin: 0;
+      }
+      p {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 162.9%;
+        color: #323232;
+        margin: 0 0 20px 0;
+
+        @include breakpoint("sm-max") {
+          font-weight: 300;
+          font-size: 11px;
+          line-height: 162.9%;
+          max-width: 324px;
+        }
+      }
+    }
+  }
+}

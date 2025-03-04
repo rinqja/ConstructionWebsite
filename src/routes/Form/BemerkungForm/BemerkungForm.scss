@@ -1,0 +1,118 @@
+@import "../../../../styles/mixins/index.scss";
+
+.bemerkung-form-design {
+    max-width: 400px;
+    margin: 0 auto;
+    height: calc(100vh - 196px);
+    display: flex;
+    align-items: center;
+
+    @include breakpoint("sm-max") {
+      display: block;
+      padding: 40px 37px 0 37px;
+      height: auto;
+    }
+
+.new-title{
+  padding-top: 20px;
+}
+
+  p {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.4%;
+    text-align: center;
+    margin: 0 0 40px 0;
+    color: #323232;
+
+    @include breakpoint("sm-max") {
+      font-weight: 700;
+font-size: 16px;
+line-height: 133.4%;
+    }
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 13px;
+  }
+  .icon-text {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+
+    span {
+      display: block;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 120.9%;
+      color: #323232;
+
+      @include breakpoint("sm-max") {
+        font-weight: 700;
+font-size: 16px;
+line-height: 120.9%;
+      }
+    }
+  }
+
+  .file-input {
+    &::-webkit-file-upload-button {
+      visibility: hidden;
+    }
+    &::-moz-file-upload-button {
+      visibility: hidden;
+    }
+    &::-ms-file-upload-button {
+      visibility: hidden;
+    }
+  }
+
+  .img-close-icon-div {
+    position: relative;
+    padding: 10px 0 0;
+    background: #f7f7f7;
+    .img-name {
+      font-size: 14px;
+      color: grey;
+      padding: 0 10px 10px;
+      display: block;
+    }
+    .img-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .close-icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 20px;
+      height: 20px;
+      padding: 6px;
+      background: lightgrey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+  
+
+  .input-bottom-align {
+    margin: 0 0 10px 0;
+  }
+  .two-button-alignment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 0 0;
+  }
+}

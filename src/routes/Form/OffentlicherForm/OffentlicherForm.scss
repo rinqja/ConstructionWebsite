@@ -1,0 +1,133 @@
+@import "../../../../styles/mixins/index.scss";
+
+.offenticher-form-all-content-alignment-for-page {
+  max-width: 430px;
+  margin: 0 auto;
+  height: calc(100vh - 196px);
+  display: flex;
+  align-items: center;
+
+  @include breakpoint("sm-max") {
+    height: auto;
+    display: block;
+    padding: 40px 37px 0 37px;
+  }
+
+  .w-full {
+    width: 100%;
+
+    .two-button-alignment {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 0 0 0;
+      }
+
+      .icon-text {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+    
+        span {
+          display: block;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 120.9%;
+          color: #323232;
+        
+          @include breakpoint("sm-max") {
+            font-weight: 700;
+font-size: 20px;
+line-height: 136.9%;
+          }
+        }
+      }
+
+    .sec-text {
+        padding: 0 0 40px 0;
+      p {
+        display: block;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 133.4%;
+        text-align: center;
+        margin: 0 auto;
+        text-align: center;
+        color: #323232;
+        max-width: 368px;
+      }
+    }
+
+    .two-button-alignment {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 0 50px 0;
+
+      @include breakpoint("sm-max") {
+        padding: 0 0 32px 0;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+
+        span {
+          display: block;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 136.9%;
+          color: #323232;
+        }
+      }
+      .selected-option span {
+        color: #ff7e00;
+      }
+      .disable-text {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: not-allowed;
+        span {
+          display: block;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 136.9%;
+          color: grey;
+          @include breakpoint("sm-max") {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 136.9%;
+          }
+        }
+      }
+    }
+
+    .text {
+      padding: 0 0 50px 0;
+
+      @include breakpoint("sm-max") {
+        padding: 0 0 32px 0;
+      }
+      span {
+        display: block;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 133.4%;
+        text-align: center;
+        color: #323232;
+
+        @include breakpoint("sm-max") {
+          font-weight: 700;
+font-size: 20px;
+line-height: 133.4%;
+max-width: 234px;
+margin: 0 auto;
+        }
+      }
+    }
+  }
+}

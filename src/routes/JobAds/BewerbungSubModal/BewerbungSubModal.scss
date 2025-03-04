@@ -1,0 +1,64 @@
+@import '../../../../styles/mixins/index.scss';
+
+.input-design-box {
+    position: relative;
+      width: 100%;
+      font-family: "Poppins", sans-serif;
+      background: rgba(62, 62, 62, 0.04);
+      height: 59px;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 193.4%;
+      color: #323232;
+      border: none;
+      border-bottom: 1px solid #323232;
+      padding: 0 27px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      input[type="file"] {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        text-indent: -999px;
+        cursor: pointer;
+      }
+      p {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 193.4%;
+        color: #323232;
+      }
+
+      @include breakpoint("sm-max") {
+        font-weight: 300;
+        height: 52px;
+
+        font-size: 12px;
+        line-height: 193.4%;
+      }
+    
+
+    ::placeholder {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 193.4%;
+      font-family: "Poppins", sans-serif;
+
+      color: #323232;
+
+      @include breakpoint("sm-max") {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 193.4%;
+      }
+    }
+  }
+  .error-message {
+    color: red;
+    font-size: 13px;
+  } 

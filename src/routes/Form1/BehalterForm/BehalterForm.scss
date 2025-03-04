@@ -1,0 +1,168 @@
+@import "../../../../styles/mixins/index.scss";
+
+.behalter-form-all-contnet-alignment {
+  width: 400px;
+  margin: 0 auto;
+  height: calc(100vh - 196px);
+  display: flex;
+  align-items: center;
+
+  @include breakpoint("sm-max") {
+    height: auto;
+    display: block;
+    padding: 40px 37px 0 37px;
+  }
+
+  .w-full {
+    width: 100%;
+
+    .two-button-alignment {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 0 0 0;
+      }
+    
+      .icon-text {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+    
+        span {
+          display: block;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 120.9%;
+          color: #323232;
+
+          @include breakpoint("sm-max") {
+            font-weight: 700;
+font-size: 16px;
+line-height: 120.9%;
+          }
+        }
+      }
+
+    .copy-button {
+      button {
+        border: none;
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 136.9%;
+        padding: 12px 13px;
+        background: rgba(217, 217, 217, 0.2);
+        color: #323232;
+
+        @include breakpoint("sm-max") {
+          font-weight: 700;
+font-size: 14px;
+line-height: 136.9%;
+        }
+      }
+    }
+
+    .button-text {
+      padding: 0 0 40px;
+
+      .container-close-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 12px;
+        span {
+          padding: 0;
+        }
+        .close-wrapper {
+          border: 1px solid black;
+          border-radius: 50%;
+          width: 20px;
+          height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+      }
+
+      @include breakpoint("sm-max") {
+        padding:  0 0 20px 0;
+      }
+      span {
+        display: block;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 133.4%;
+        color: #323232;
+        padding: 0 0 10px 0;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 133.4%;
+        color: #323232;
+        text-align: center;
+      }
+
+      .btn-align {
+        display: flex;
+        align-items: center;
+        padding: 0 0 20px 0;
+        gap: 10px;
+        button {
+          padding: 12px 13px;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 136.9%;
+          border: 1px solid #000000;
+          background-color: transparent;
+          cursor: pointer;
+          color: #000000;
+
+          @include breakpoint("sm-max") {
+            font-size: 16px;
+            line-height: 20px;
+          }
+
+          &:hover {
+            background: #ff7e00;
+            color: #fff;
+            border: 1px solid transparent;
+          }
+        }
+        .selected-container {
+          background: #ff7e00;
+          color: #fff;
+          border: 1px solid #ff7e00;
+        }
+      }
+    }
+
+    .text {
+      padding: 0 0 40px 0;
+
+      @include breakpoint("sm-max") {
+        padding: 0 0 20px 0;
+      }
+      span {
+        display: block;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 133.4%;
+        text-align: center;
+        color: #323232;
+
+        @include breakpoint("sm-max") {
+          font-weight: 700;
+font-size: 16px;
+line-height: 133.4%;
+        }
+      }
+    }
+  }
+}

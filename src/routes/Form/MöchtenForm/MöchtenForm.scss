@@ -1,0 +1,95 @@
+@import "../../../../styles/mixins/index.scss";
+
+.mochten-form-all-content-alignment {
+  max-width: 400px;
+  margin: 0 auto;
+  height: calc(100vh - 196px);
+  display: flex;
+  align-items: center;
+
+  @include breakpoint("sm-max") {
+    height: auto;
+    padding: 40px 37px 0 37px;
+    justify-content: center;
+  }
+
+  .space-remove {
+    .repeat-text:last-child {
+      padding: 0;
+    }
+  }
+
+  p {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0 0 42px 0;
+    line-height: 133.4%;
+    text-align: center;
+    color: #323232;
+
+    @include breakpoint("sm-max") {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 133.4%;
+      max-width: 268px;
+      margin: 0 auto 22px auto;
+    }
+  }
+
+  .new-icon-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 50px 0;
+    gap: 80px;
+    cursor: pointer;
+    div {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      span {
+        display: block;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 130.4%;
+        color: #323232;
+
+        @include breakpoint("sm-max") {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 130.4%;
+        }
+      }
+    }
+    .selected-option span {
+      color: #ff7e00;
+    }
+  }
+  .two-button-alignment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 0 0;
+  }
+  .icon-text {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+
+    span {
+      display: block;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 120.9%;
+      color: #323232;
+
+      @include breakpoint("sm-max") {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120.9%;
+      }
+    }
+  }
+}

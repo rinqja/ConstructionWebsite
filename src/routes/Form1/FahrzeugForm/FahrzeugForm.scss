@@ -1,0 +1,80 @@
+@import "../../../../styles/mixins/index.scss";
+
+.fahrzeug-form-contnet-alignment {
+  max-width: 400px;
+  margin: 0 auto;
+  height: calc(100vh - 196px);
+  display: flex;
+  align-items: center;
+
+  @include breakpoint("sm-max") {
+    height: auto;
+    padding: 40px 37px 0 37px;
+  }
+
+  .error-message {
+    color: red;
+    font-size: 13px;
+  }
+
+  .icon-text {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+
+    span {
+      display: block;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 120.9%;
+      color: #323232;
+
+      @include breakpoint("sm-max") {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120.9%;
+      }
+    }
+  }
+  .text {
+    padding: 0 0 40px 0;
+    p {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 133.4%;
+      text-align: center;
+      color: #323232;
+
+      @include breakpoint("sm-max") {
+        margin: 0 auto;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 133.4%;
+        max-width: 300px;
+      }
+    }
+  }
+
+  .measurements{
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    background: rgba(62, 62, 62, 0.04);
+    height: 60px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 193.4%;
+    color: #323232;
+    border: none;
+    margin-top: 20px;
+    border-bottom: 1px solid #323232;
+    padding: 0 20px;
+   }
+  .two-button-alignment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 0 0;
+  }
+}

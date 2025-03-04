@@ -1,0 +1,88 @@
+@import "../../../../styles/mixins/index.scss";
+
+.gewer-blich-form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px 20px;
+  border-radius: 4%;
+  
+  @include breakpoint("sm-max") {
+    padding: 0 37px;
+  }
+
+  .input-bottom {
+    margin: 0 0 11px 0;
+  }
+
+  .error-message {
+    color: red;
+    font-size: 13px;
+  }
+
+  .icon-text {
+    display: flex;
+    align-items: center;
+    padding: 40px 0 0 0;
+    gap: 12px;
+    justify-content: flex-end;
+    cursor: pointer;
+
+    span {
+      display: block;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 120.9%;
+      color: #323232;
+
+      @include breakpoint("sm-max") {
+        font-weight: 700;
+font-size: 16px;
+line-height: 120.9%;
+      }
+    }
+  }
+
+  .two-col-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+    padding: 0 0 10px 0;
+  }
+
+  .child-text {
+    padding: 0 0 10px 0;
+
+    span {
+      display: block;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 193.4%;
+      color: #323232;
+
+      @include breakpoint("sm-max") {
+        font-weight: 500;
+font-size: 14px;
+line-height: 193.4%;
+      }
+    }
+  }
+
+  .text {
+    padding: 0 0 10px 0;
+    span {
+      display: block;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 193.4%;
+      color: #323232;
+
+      @include breakpoint("sm-max") {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 193.4%;
+      }
+    }
+  }
+}

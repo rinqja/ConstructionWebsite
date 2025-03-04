@@ -1,0 +1,98 @@
+@import "../../../../styles/mixins/index.scss";
+
+.fuhrbetrieb-content-page-details-alignment {
+  padding: 0 0 116px 0;
+
+  @include breakpoint("sm-max") {
+    padding: 0 0 60px 0;
+  }
+
+  .container-md6 {
+    @include breakpoint("sm-max") {
+      padding: 0;
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
+
+    @include breakpoint("sm-max") {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 19px;
+    }
+
+    .grid-items {
+      background: rgba(145, 145, 145, 0.1);
+      padding: 75px 85px;
+
+      @include breakpoint("sm-max") {
+        padding: 75px 28px;
+      }
+
+      h6 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 152.4%;
+        text-transform: uppercase;
+        color: #323232;
+        margin: 0 0 10px 0;
+
+        @include breakpoint("sm-max") {
+          font-weight: 700;
+          margin: 0 0 10px 0;
+          font-size: 14px;
+          line-height: 152.4%;
+        }
+      }
+
+      p {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 150%;
+        margin: 0 0 10px 0;
+        color: #323232;
+
+        @include breakpoint("sm-max") {
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 150%;
+        }
+      }
+
+      .all-icon-text {
+        .icon-text:last-child {
+          padding: 0;
+        }
+        .icon-text {
+          display: grid;
+          grid-template-columns: 12px 1fr;
+          gap: 17px;
+          align-items: center;
+          padding: 0 0 12px 0;
+
+          div {
+            display: flex;
+            align-items: center;
+          }
+
+          span {
+            display: block;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 150%;
+            color: #323232;
+
+            @include breakpoint("sm-max") {
+              font-weight: 300;
+              font-size: 12px;
+              max-width: 278px;
+              line-height: 150%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

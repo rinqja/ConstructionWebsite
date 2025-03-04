@@ -1,0 +1,179 @@
+@import "../../../styles/mixins/index.scss";
+
+footer {
+  background: #4c6ca1;
+  padding: 37px 57px;
+
+  @include breakpoint("sm-max") {
+    padding: 80px 0;
+  }
+
+  .new-grid {
+    display: grid;
+    grid-template-columns: 144px 1fr;
+    gap: 60px;
+
+    @include breakpoint("sm-max") {
+      grid-template-columns: 92px 1fr;
+      gap: 20px;
+    }
+
+    .new-grid-items {
+      span {
+        max-width: 244px;
+        font-weight: 400;
+        font-size: 30px;
+        display: block;
+        line-height: 150.4%;
+        max-width: 244px;
+        color: #ffffff;
+
+        @include breakpoint("sm-max") {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 150.4%;
+        }
+      }
+    }
+  }
+
+  .footer-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    @include breakpoint("sm-max") {
+      flex-wrap: wrap;
+      gap: 16px 20px;
+    }
+
+    a {
+      display: block;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 133.4%;
+      color: #323232;
+
+      @include breakpoint("sm-max") {
+        font-size: 14px;
+        line-height: 133.4%;
+      }
+    }
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 150px;
+    padding: 0 0 60px 0;
+
+    @include breakpoint("sm-max") {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 60px;
+      padding: 0 16px 60px 16px;
+    }
+
+    .footer-grid-items {
+      h5 {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 130.4%;
+        margin: 0 0 10px 0;
+        color: rgba(255, 126, 0, 0.7);
+   
+
+        @include breakpoint("sm-max") {
+          font-weight: 700;
+          font-size: 32px;
+          margin: 0 0 40px 0;
+          line-height: 130.4%;
+        }
+      }
+      p {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 150.4%;
+        color: #323232;
+        margin: 0;
+      }
+      .button-right {
+        padding: 40px 0 0 0;
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+
+        span {
+          display: block;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 141.9%;
+          color: #323232;
+
+          @include breakpoint("sm-max") {
+            font-weight: 700;
+font-size: 16px;
+line-height: 141.9%;
+          }
+        }
+      }
+
+      .all-input {
+        div:last-child {
+          margin: 0;
+        }
+        div {
+          margin: 0 0 11px 0;
+        }
+        input {
+          width: 100%;
+          background: rgba(62, 62, 62, 0.20);
+          height: 59px;
+          border: none;
+          border-bottom: 1px solid #0C3985;
+          font-weight: 300;
+        
+          font-size: 16px;
+          padding: 0 25px;
+          font-family: "Poppins", sans-serif;
+          line-height: 22px;
+          color: #fff;
+
+          &:focus {
+            outline: none;
+          }
+        }
+        ::placeholder {
+          color: #323232;
+          font-weight: 300;
+          font-size: 16px;
+          font-family: "Poppins", sans-serif;
+
+          line-height: 22px;
+        }
+      }
+
+      h6 {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 133.4%;
+        margin: 0 0 40px 0;
+        color: #323232;
+
+        @include breakpoint("sm-max") {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 133.4%;
+          margin: 0 0 20px 0;
+        }
+      }
+      .error-message {
+        color: lightgrey;
+        font-size: 13px;
+      }
+    }
+  }
+}

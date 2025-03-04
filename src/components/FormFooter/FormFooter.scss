@@ -1,0 +1,40 @@
+@import "../../../styles/mixins/index.scss";
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.form-footer-content-alignment {
+  background: #f7f7f7;
+  padding: 16px 0;
+
+  @include breakpoint("sm-max") {
+    padding: 10px 0;
+  }
+
+  .flex-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    @include breakpoint("sm-max") {
+      gap: 10px;
+    }
+
+    a {
+      display: block;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 133.4%;
+      color: #323232;
+
+      @include breakpoint("sm-max") {
+        font-weight: 600;
+font-size: 10px;
+line-height: 133.4%;
+      }
+    }
+  }
+}

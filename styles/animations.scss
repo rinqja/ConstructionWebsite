@@ -1,0 +1,53 @@
+@keyframes slide-in {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  @keyframes slide-in-left-to-right {
+    from {
+        transform: translateX(-100%); /* Start off-screen to the left */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0); /* End at the element's original position */
+        opacity: 1;
+    }
+  }
+  @keyframes slide-in-right-to-left {
+    from {
+        transform: translateX(100%); /* Start off-screen to the right */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0); /* End at the element's original position */
+        opacity: 1;
+    }
+  }
+  
+  
+  .animated-right-to-left {
+    animation: slide-in-right-to-left 2s forwards;
+  }
+  
+  .animated-left-to-right {
+    animation: slide-in-left-to-right 2s forwards;
+  }
+
+  .animated-paragraph {
+    animation: slide-in 2s forwards;
+  }  
+  .animated-right-to-left1 {
+    animation: slide-in-right-to-left 3s forwards;
+  }
+  .animated-right-to-left2 {
+    animation: slide-in-right-to-left 3s forwards;
+  }
+  .animated-right-to-left3 {
+    animation: slide-in-right-to-left 3s forwards;
+  }
+  
